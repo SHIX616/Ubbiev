@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Тату студия SHIX</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Сертификаты</h1>
+        </header>
+        <main>
+            <section class="certificates">
+                <img src="images/text.png" alt="text" width="919" height="793">
+                <h2>Лучший подарок на любой праздник - это сертификат на услуги в TATTOO-SHIX. Действительно, подарок на всю жизнь!</h2>
+                <p>Сумму вы выбираете сами. Человек потом сам, когда будет записываться, может выбрать любую услугу нашей студии и мастера, к которому он хочет.</p>
+                <p>Сертификат можно забрать в нашей студии или онлайн, или заказать доставку курьером. Порадуйте своих родных и близких.</p>
+            </section>
+
+            <section class="cart-items">
+                <ul id="cart-items"></ul>
+                <label for="certificate-amount">Выберите номинал сертификата:</label>
+                <select id="certificate-amount">
+                    <option value="500">500 руб</option>
+                    <option value="1000">1000 руб</option>
+                    <option value="2000">2000 руб</option>
+                    <option value="3500">3500 руб</option>
+                    <option value="5000">5000 руб</option>
+                    <option value="10000">10000 руб</option>
+                    <option value="15000">15000 руб</option>
+                </select>
+                <label for="certificate-quantity">Количество сертификатов:</label>
+                <input type="number" id="certificate-quantity" min="1" value="1">
+                <button id="addToCartButton" class="btn">Добавить в корзину</button>
+            </section>
+
+            <section id="paymentSection" class="hidden">
+                <p id="selectedCertificateInfo"></p>
+                <button id="payButton" class="btn">Оплатить</button>
+                <p>При оплате укажите в примечании, как связаться с вами.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="care.html">Уход за тату</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a href="index.html">Вернуться на главную</a></li>
+                    <li><a href="cart.html">Сертификаты</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

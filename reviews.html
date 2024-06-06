@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - Тату студия SHIX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Отзывы наших клиентов</h1>
+        <div id="reviewsSection">
+            <div class="review">
+                <h3>Иван Иванов</h3>
+                <img src="portfolio/Fedya/4.png">
+                <p>Отличная студия! Все мастера профессионалы своего дела. Очень доволен своей новой татуировкой!</p>
+            </div>
+            <div class="review">
+                <h3>Анна Смирнова</h3>
+                <img src="portfolio/slava/2.png">
+                <p>Прекрасное место! Дружелюбная атмосфера и качественная работа. Рекомендую всем!</p>
+            </div>
+        </div>
+        <h2>Оставить отзыв</h2>
+        <form id="reviewForm">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="review">Ваш отзыв:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        <a href="index.html" class="btn">Вернуться на главную</a>
+        <button id="backToTop" class="btn">Наверх</button>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="care.html">Уход за тату</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="index.html#contacts">Контакты</a></li>
+            <li><a href="index.html">Вернуться на главную</a></li>
+            <li><a href="cart.html">Сертификаты</a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
